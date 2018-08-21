@@ -1,0 +1,14 @@
+<h1>Found sheepies</h1>
+<p>Here are some beautiful sheepies</p>
+<p>Found a sheep?</p>
+<%= link_to new_sheep_path do  %>
+<h3>Sign up your sheep</h3>
+
+<% end %>
+<ul>
+
+<% @sheeps.each do |sheep| %>
+<%= link_to sheep.name, sheep_path(sheep) %>
+
+<% end %>
+</ul>

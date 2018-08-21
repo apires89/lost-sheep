@@ -1,0 +1,6 @@
+<h1>Here are more details about your sheep</h1>
+<li><%= @sheep.name %></li>
+<li><%= @sheep.address %></li>
+<li><%= @sheep.found %></li>
+<%= link_to "Edit", edit_sheep_path %>
+<%= link_to "Delete", sheep_path(@sheep), method: :delete, data: {confirm: "Are your sure you want to terminate your sheep?"} %>
